@@ -1,0 +1,3 @@
+/mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles/chapter10.dir
+/mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles/rebuild_cache.dir

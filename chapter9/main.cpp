@@ -1,7 +1,6 @@
 #include <iostream>
 #include <random>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 void Sequential(const vector<int> &arr)
