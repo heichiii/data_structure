@@ -129,6 +129,43 @@ chapter10/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chapter10.dir/build.make CMakeFiles/chapter10.dir/build
 .PHONY : chapter10/fast
 
+#=============================================================================
+# Target rules for targets named arrange
+
+# Build rule for target.
+arrange: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arrange
+.PHONY : arrange
+
+# fast build rule for target.
+arrange/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrange.dir/build.make CMakeFiles/arrange.dir/build
+.PHONY : arrange/fast
+
+arrange.o: arrange.cpp.o
+.PHONY : arrange.o
+
+# target to build an object file
+arrange.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrange.dir/build.make CMakeFiles/arrange.dir/arrange.cpp.o
+.PHONY : arrange.cpp.o
+
+arrange.i: arrange.cpp.i
+.PHONY : arrange.i
+
+# target to preprocess a source file
+arrange.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrange.dir/build.make CMakeFiles/arrange.dir/arrange.cpp.i
+.PHONY : arrange.cpp.i
+
+arrange.s: arrange.cpp.s
+.PHONY : arrange.s
+
+# target to generate assembly for a file
+arrange.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrange.dir/build.make CMakeFiles/arrange.dir/arrange.cpp.s
+.PHONY : arrange.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -161,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... arrange"
 	@echo "... chapter10"
+	@echo "... arrange.o"
+	@echo "... arrange.i"
+	@echo "... arrange.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

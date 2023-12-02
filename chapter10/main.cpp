@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <map>
-#include <random>
+
 using namespace std;
 
 // 定义学生类
@@ -26,20 +26,10 @@ public:
         {
             total_score += score;
         }
+        total_score/=3;
     }
 };
 
-class Exam
-{
-public:
-    string name;
-    int time;
-    Exam(const string& n,int t)
-    {
-        name==n;
-        time=t;
-    }
-};
 // 定义班级类
 class Class
 {
@@ -54,42 +44,40 @@ public:
     }
 };
 
-vector<Exam> es=
-        {
-                Exam("e1",60),
-                Exam("e2",90),
-};
+// 创建学生对象
 vector<Student> students = {
     Student(1, "Alice", "B1", {80, 90, 85}),
-    Student(2, "Bob", "B1", {7, 85, 75}),
-    Student(3, "Charlie", "B1", {80, 95, 92}),
-    Student(4, "Alice2", "B2", {81, 10, 85}),
-    Student(5, "Bob2", "B2", {70, 15, 75}),
-    Student(6, "Charlie2", "B2", {91, 95, 92}),
-    Student(7, "Alice3", "B3", {82, 0, 85}),
-    Student(8, "Bob3", "B3", {20, 51, 75}),
-    Student(9, "Charlie3", "B3", {98, 95, 92}),
-    Student(10, "Alice4", "B4", {80, 19, 85}),
-    Student(11, "Bob4", "B4", {70, 5, 75}),
-    Student(12, "Charlie4", "B4", {90, 25, 92}),
-    Student(13, "Alice5", "B5", {10, 40, 25}),
-    Student(14, "Bob5", "B5", {70, 35, 75}),
-    Student(15, "Charlie5", "B5", {90, 99, 92}),
-    Student(16, "Alice6", "6", {80, 0, 85}),
-    Student(17, "Bob6", "B6", {30, 85, 75}),
-    Student(18, "Charlie6", "B6", {40, 96, 92}),
-    Student(19, "Alice7", "B7", {80, 90, 85}),
-    Student(20, "Bob7", "B7", {74, 81, 68}),
-    Student(21, "Charlie7", "B7", {90, 51, 92}),
-    Student(22, "Alice8", "B8", {80, 90, 5}),
-    Student(23, "Bob8", "B8", {70, 85, 75}),
-    Student(24, "Charlie8", "B8", {90, 9, 92}),
-    Student(25, "Alice9", "B9", {80, 92, 85}),
-    Student(26, "Bob9", "B9", {70, 85, 75}),
-    Student(27, "Charlie9", "B9", {90, 95, 92}),
-    Student(28, "Alice10", "B10", {83, 91, 85}),
-    Student(29, "Bob10", "B10", {78, 85, 75}),
-    Student(30, "Charlie10", "B210", {0, 95, 92})};
+    Student(2, "Bob", "B1", {70, 85, 75}),
+    Student(3, "Charlie", "B1", {90, 95, 92}),
+    Student(4, "David", "B2", {60, 70, 65}),
+    Student(5, "Eve", "B2", {80, 75, 70}),
+    Student(6, "Frank", "B2", {90, 90, 90}),
+    Student(7, "Grace", "B3", {70, 75, 80}),
+    Student(8, "Heidi", "B3", {80, 85, 90}),
+    Student(9, "Ivy", "B3", {90, 95, 100}),
+    Student(10, "Julia", "B4", {60, 65, 70}),
+    Student(11, "Kevin", "B4", {80, 85, 90}),
+    Student(12, "Lily", "B4", {90, 95, 100}),
+    Student(13, "Mary", "B5", {60, 65, 70}),
+    Student(14, "Nancy", "B5", {80, 85, 90}),
+    Student(15, "Olivia", "B5", {90, 95, 100}),
+    Student(16, "Peter", "B6", {60, 65, 70}),
+    Student(17, "Queen", "B6", {80, 85, 90}),
+    Student(18, "Rose", "B6", {90, 95, 100}),
+    Student(19, "Sarah", "B7", {60, 65, 70}),
+    Student(20, "Tom", "B7", {80, 85, 90}),
+    Student(21, "Ursula", "B7", {90, 95, 100}),
+    Student(22, "Victor", "B8", {60, 65, 70}),
+    Student(23, "Wendy", "B8", {80, 85, 90}),
+    Student(24, "Xavier", "B8", {90, 95, 100}),
+    Student(25, "Yvonne", "B9", {60, 65, 70}),
+    Student(26, "Zoe", "B9", {80, 85, 90}),
+    Student(27, "Amy", "B9", {90, 95, 100}),
+    Student(28, "Ben", "B10", {60, 65, 70}),
+    Student(29, "Cindy", "B10", {80, 85, 90}),
+    Student(30, "David2", "B10", {90, 95, 100}),
+
+};
 
 // 创建班级对象
 vector<Class> classes = {
@@ -102,20 +90,23 @@ vector<Class> classes = {
     Class("B7", {students[18], students[19], students[20]}),
     Class("B8", {students[21], students[22], students[23]}),
     Class("B9", {students[24], students[25], students[26]}),
-    Class("B10", {students[27], students[28], students[29]})};
+    Class("B10", {students[27], students[28], students[29]}),
+
+};
 
 // 显示学生考试情况
 void displayAllStudents()
 {
     sort(students.begin(), students.end(), [](const Student &a, const Student &b)
          { return a.total_score > b.total_score; });
-
+    cout<<"---------------------all students------------------------"<<endl;
     for (const Student &student : students)
     {
         cout << "Student ID: " << student.student_id
              << ", Name: " << student.name
              << ", Total Score: " << student.total_score << endl;
     }
+    cout<<"---------------------all students------------------------"<<endl;
 }
 
 void displayClassStudents(string class_id)
@@ -132,13 +123,16 @@ void displayClassStudents(string class_id)
 
     sort(class_students.begin(), class_students.end(), [](const Student &a, const Student &b)
          { return a.total_score > b.total_score; });
-
+    cout<<"---------------------"+class_id;
+    cout<<"-students------------------------"<<endl;
     for (const Student &student : class_students)
     {
         cout << "Student ID: " << student.student_id
              << ", Name: " << student.name
              << ", Total Score: " << student.total_score << endl;
     }
+    cout<<"---------------------"+class_id;
+    cout<<"-students------------------------"<<endl;
 }
 
 void displayStudentScores(int student_id)
@@ -213,19 +207,75 @@ void statisticsTotalScores()
         cout << endl;
     }
 }
+void statisticsCourseScores()
+{
+    sort(students.begin(), students.end(), [](const Student &a, const Student &b)
+         { return a.total_score > b.total_score; });
 
+    map<string, vector<Student>> score_ranges;
+    score_ranges["90 and above"] = {};
+    score_ranges["80 - 89"] = {};
+    score_ranges["70 - 79"] = {};
+    score_ranges["60 - 69"] = {};
+    score_ranges["below 60"] = {};
+
+    for (const Student &student : students)
+    {
+        if (student.total_score >= 90)
+        {
+            score_ranges["90 and above"].push_back(student);
+        }
+        else if (student.total_score >= 80)
+        {
+            score_ranges["80 - 89"].push_back(student);
+        }
+        else if (student.total_score >= 70)
+        {
+            score_ranges["70 - 79"].push_back(student);
+        }
+        else if (student.total_score >= 60)
+        {
+            score_ranges["60 - 69"].push_back(student);
+        }
+        else
+        {
+            score_ranges["below 60"].push_back(student);
+        }
+    }
+
+    for (const auto &entry : score_ranges)
+    {
+        cout << "Score Range: " << entry.first << endl;
+        for (const Student &student : entry.second)
+        {
+            cout << "Student ID: " << student.student_id
+                 << ", Name: " << student.name
+                 << ", Total Score: " << student.total_score << endl;
+        }
+        cout << endl;
+    }
+}
 int main()
 {
-    displayAllStudents();
-    cout << endl;
+//    displayAllStudents();
+//    cout << endl;
 
-    displayClassStudents("B1");
-    cout << endl;
+//     displayClassStudents("B1");
+//     displayClassStudents("B2");
+//     displayClassStudents("B3");
+//     displayClassStudents("B4");
+//     displayClassStudents("B5");
+//     displayClassStudents("B6");
+//     displayClassStudents("B7");
+//     displayClassStudents("B8");
+//     displayClassStudents("B9");
+//     displayClassStudents("B10");
+//     cout << endl;
 
-    displayStudentScores(2);
-    cout << endl;
+//     displayStudentScores(2);
+//     cout << endl;
 
-    statisticsTotalScores();
+     statisticsTotalScores();
 
     return 0;
 }

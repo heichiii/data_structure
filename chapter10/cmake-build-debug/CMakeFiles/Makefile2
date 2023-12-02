@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debu
 
 # The main recursive "all" target.
 all: CMakeFiles/chapter10.dir/all
+all: CMakeFiles/arrange.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/chapter10.dir/clean
+clean: CMakeFiles/arrange.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,7 +83,7 @@ clean: CMakeFiles/chapter10.dir/clean
 CMakeFiles/chapter10.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chapter10.dir/build.make CMakeFiles/chapter10.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chapter10.dir/build.make CMakeFiles/chapter10.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target chapter10"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target chapter10"
 .PHONY : CMakeFiles/chapter10.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +101,32 @@ chapter10: CMakeFiles/chapter10.dir/rule
 CMakeFiles/chapter10.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chapter10.dir/build.make CMakeFiles/chapter10.dir/clean
 .PHONY : CMakeFiles/chapter10.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/arrange.dir
+
+# All Build rule for target.
+CMakeFiles/arrange.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrange.dir/build.make CMakeFiles/arrange.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrange.dir/build.make CMakeFiles/arrange.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target arrange"
+.PHONY : CMakeFiles/arrange.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/arrange.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/arrange.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/e/projects/cpp/data_structure/chapter10/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/arrange.dir/rule
+
+# Convenience name for target.
+arrange: CMakeFiles/arrange.dir/rule
+.PHONY : arrange
+
+# clean rule for target.
+CMakeFiles/arrange.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrange.dir/build.make CMakeFiles/arrange.dir/clean
+.PHONY : CMakeFiles/arrange.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

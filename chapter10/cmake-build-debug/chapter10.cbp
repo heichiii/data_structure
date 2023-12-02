@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/e/projects/cpp/data_structure/chapter10/arrange.cpp">
+			<Option target="chapter10"/>
+		</Unit>
 		<Unit filename="/mnt/e/projects/cpp/data_structure/chapter10/main.cpp">
 			<Option target="chapter10"/>
 		</Unit>
