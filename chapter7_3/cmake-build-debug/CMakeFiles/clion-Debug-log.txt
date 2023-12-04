@@ -11,6 +11,6 @@ C:\personal\cmake3.28\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGR
 -- Check for working CXX compiler: C:/personal/mingw/gcc-v13.2.0-mingw-v11.0.0-x86_64/gcc-v13.2.0-mingw-v11.0.0-x86_64/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (9.6s)
+-- Configuring done (5.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: E:/projects/cpp/data_structure/chapter7_3/cmake-build-debug

@@ -1,3 +1,3 @@
-/mnt/e/projects/cpp/data_structure/chapter9/cmake-build-debug/CMakeFiles/chapter9.dir
-/mnt/e/projects/cpp/data_structure/chapter9/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/e/projects/cpp/data_structure/chapter9/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/projects/cpp/data_structure/chapter9/cmake-build-debug/CMakeFiles/chapter9.dir
+E:/projects/cpp/data_structure/chapter9/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/projects/cpp/data_structure/chapter9/cmake-build-debug/CMakeFiles/rebuild_cache.dir
