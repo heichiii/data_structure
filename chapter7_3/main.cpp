@@ -268,8 +268,9 @@ int main()
             odd_path[i].push_back(shortest_order[2 * i]);
             odd_path[i].push_back(shortest_order[2 * i + 1]);
         }
-        vector<vector<int>> time_edge(n_block, vector<int>(n_block, 0));
-        copy.final_time(&time_edge);
+        vector<vector<int>> time_edge(n_block, vector<int>(n_block, 0));//边可以走的次数
+        copy.final_time(&time_edge);//先得到初始边的次数
+        //再加边
         for (int i = 0; i < odd_path.size(); i++)
         {
             area.get_ood_path(&odd_path[i], path_f);

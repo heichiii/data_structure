@@ -75,5 +75,7 @@ int main()
         }
         cout<<endl;
     }
+    delete[] cs;
+    delete[] es;
     return 0;
 }

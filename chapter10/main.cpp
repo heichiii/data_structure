@@ -433,31 +433,31 @@ int main()
             }
         }
     }
-//    displayAllStudents();
-//    cout << endl;
+    displayAllStudents();
+    cout << endl;
 
-//     displayClassStudents("B1");
-//     displayClassStudents("B2");
-//     displayClassStudents("B3");
-//     displayClassStudents("B4");
-//     displayClassStudents("B5");
-//     displayClassStudents("B6");
-//     displayClassStudents("B7");
-//     displayClassStudents("B8");
-//     displayClassStudents("B9");
-//     displayClassStudents("B10");
-//     cout << endl;
+     displayClassStudents("B1");
+     displayClassStudents("B2");
+     displayClassStudents("B3");
+     displayClassStudents("B4");
+     displayClassStudents("B5");
+     displayClassStudents("B6");
+     displayClassStudents("B7");
+     displayClassStudents("B8");
+     displayClassStudents("B9");
+     displayClassStudents("B10");
+     cout << endl;
 
-//     displayStudentScores(2);
-//     cout << endl;
+     displayStudentScores(2);
+     cout << endl;
 
-//     statisticsTotalScores();
+     statisticsTotalScores();
 
-//    statisticsCourseScores("c1");
-//    statisticsCourseScores("c6","B2");
-//    find1_total(30,80);
-//    find1_course(30,80,"c1");
-//    find2_total(30,80,"B2");
+    statisticsCourseScores("c1");
+    statisticsCourseScores("c6","B2");
+    find1_total(30,80);
+    find1_course(30,80,"c1");
+    find2_total(30,80,"B2");
     find2_course(30,80,"c5","B2");
     return 0;
 }
