@@ -128,15 +128,9 @@ void Mid_expression::trans_pre(std::string &pre_exp)
         else if (isdigit(exp[i]))
         {
             pre_exp += exp[i];
-            // temp += exp[i];
             if (!isdigit(exp[i - 1]))
             {
-                // for (int j = temp.length() - 1; j >= 0; j--)
-                // {
-                //     pre_exp += temp[j];
-                // }
                 pre_exp += ' ';
-                // temp.clear();
             }
         }
         else if (exp[i] == '(')

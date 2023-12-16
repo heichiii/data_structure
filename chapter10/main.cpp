@@ -125,7 +125,7 @@ void displayAllStudents()
     }
     cout<<"---------------------all students------------------------"<<endl;
 }
-
+// 班级学生信息
 void displayClassStudents(string class_id)
 {
     vector<Student> class_students;
@@ -151,7 +151,7 @@ void displayClassStudents(string class_id)
     cout<<"---------------------"+class_id;
     cout<<"-students------------------------"<<endl;
 }
-
+// 指定学生信息
 void displayStudentScores(int student_id)
 {
     auto it = find_if(students.begin(), students.end(), [student_id](const Student &student)
@@ -224,6 +224,7 @@ void statisticsTotalScores()
         cout << endl;
     }
 }
+// 统计班级学生信息
 void statisticsCourseScores(string c)
 {
 

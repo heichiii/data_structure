@@ -1,2 +1,0 @@
-E:/projects/cpp/data_structure/chapter7_2/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/projects/cpp/data_structure/chapter7_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
